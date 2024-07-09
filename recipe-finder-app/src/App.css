@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  padding: 30px 50px 20px 50px;
+}
+
+/************************ NAVBAR SECTION STYLING STARTS **************************************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 33);
+  font-weight: 600;
+  font-size: 20px;
+}
+/************************ NAVBAR SECTION STYLING ENDS **************************************/
+
+/************************ HERO SECTION STYLING STARTS **************************************/
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+.hero section {
+  width: 100%;
+  border-radius: 20px;
+  width: 100%;
+  height: 450px;
+  background: rgba(0, 0, 0, 0.5) url(/main.jpg);
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  gap: 10px;
+}
+.hero section h4 {
+  color: #dc582a;
+  font-size: 32px;
+  font-weight: 500;
+}
+.hero section h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  width: 450px;
+}
+.hero section p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (max-width: 1050px) {
+  .hero section {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 666px) {
+  .hero section {
+    padding-left: 20px;
+  }
+  .hero section h4 {
+    font-size: 26px;
+  }
+  .hero section h2 {
+    font-size: 32px;
+    width: 100%;
+  }
+  .hero section p {
+    font-size: 20px;
+  }
+  body {
+    padding: 30px 20px 20px 20px;
+  }
+}
+
+/************************ HERO SECTION STYLING ENDS **************************************/
+
+/************************ RECIPES SECTION STYLING STARTS **************************************/
+.recipes {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin: 35px 0;
+}
+.recipes section:first-child {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recipes section:first-child button {
+  width: 280px;
+  padding: 25px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.recipes section:first-child button:first-child {
+  background-color: #dc582a;
+}
+.recipes section:first-child button:nth-child(2) {
+  background-color: #c4d600;
+}
+.recipes section:first-child button:nth-child(3) {
+  background-color: #eaaa00;
+}
+.recipes section:first-child button:nth-child(4) {
+  background-color: #ed8b00;
+}
+.recipes section:first-child button:last-child {
+  background-color: #84bd00;
+}
+
+.recipes .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 40px;
+}
+.recipes .container .card {
+  text-decoration: none;
+}
+.recipes .container .card img {
+  width: 100%;
+  height: 260px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.recipes .container .card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 10px;
+}
+.recipes .container .card h4:last-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: #dc582a;
+}
+.recipes h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+@media (max-width: 840px) {
+  .recipes .container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+@media (max-width: 699px) {
+  .recipes .container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+@media (max-width: 620px) {
+  .recipes section:first-child button {
+    width: 100%;
+  }
+}
+/************************ RECIPES SECTION STYLING ENDS **************************************/
+
+/************************ FOOTER SECTION STYLING STARTS **************************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-top: 1px solid gray;
+  gap: 25px;
+}
+footer a {
+  text-decoration: none;
+  font-size: 27px;
+}
+footer a:first-child {
+  color: blue;
+}
+footer a:nth-child(2) {
+  color: red;
+}
+footer a:nth-child(3) {
+  color: #0077b5;
+}
+footer a:last-child {
+  color: pink;
+}
+
+/************************ FOOTER SECTION STYLING ENDS **************************************/
+
+/************************ RECIPE DETAILS SECTION STYLING STARTS **************************************/
+.recipe-details {
+  min-height: 810px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.recipe-details img {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.recipe-details h1 {
+  margin-bottom: 10px;
+}
+.recipe-details p {
+  margin-bottom: 35px;
+  color: gray;
+  font-size: 20px;
+}
+.recipe-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+.recipe-details div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: inside;
+  font-size: 20px;
+}
+.recipe-details h5 {
+  color: #dc582a;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+/************************ RECIPE DETAILS SECTION STYLING ENDS **************************************/
+
+/************************ ABOUT SECTION STYLING STARTS **************************************/
+.about {
+  min-height: 733px;
+}
+.about h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(0, 0, 37);
+  margin-bottom: 35px;
+}
+.about p {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: gray;
+}
+/************************ ABOUT SECTION STYLING ENDS **************************************/

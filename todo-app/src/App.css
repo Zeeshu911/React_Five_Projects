@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+nav {
+  border-bottom: 1px solid gray;
+  color: #111;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 20px 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.todo-form,
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+.todo-form h1,
+.todo-list h1 {
+  font-size: 32px;
+}
+.todo-list p{
+  color: gray;
+  font-size: 24px;
+}
+.todo-form input {
+  border-radius: 8px;
+  border: 1px solid gray;
+  padding: 10px 5px;
+  font-size: 20px;
+}
+.todo-form button {
+  background: #0d6efd;
+  color: #fff;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  width: fit-content;
+}
+.todo-list .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.todo-list .container .card {
+  border-radius: 8px;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  font-size: 20px;
+}
+.todo-list .container .card button {
+  background: #dc3545;
+  color: #fff;
+  padding: 6px 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  width: fit-content;
+}
